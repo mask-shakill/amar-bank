@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amar bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      class="nav h-20 flex justify-between items-center bg-slate-700 text-white"
+    >
+      <h1 class="text-2xl ml-10 font-bold">
+        <span class="text-yellow-400">Amar</span> Bank
+      </h1>
+      <ul class="flex items-center gap-x-16">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <a
+        class="bg-amber-300 text-black me-14 px-4 py-1 rounded-sm"
+        href="login.html"
+        >logout</a
+      >
+    </nav>
+
+    <h1 class="text-center text-slate-900 text-3xl font-bold mt-8">
+      Welcome to Amar Bank
+    </h1>
+    <section class="mt-14 section-one">
+      <div class="grid grid-cols-3 gap-x-8 w-9/12 mx-auto text-white">
+        <div class="bg-blue-700 p-8 rounded-md">
+          <p class="text-5xl">Deposit</p>
+          <p class="text-3xl mt-3">$ <span id="deposit-display">000</span></p>
+        </div>
+        <div class="bg-pink-700 p-8 rounded-md">
+          <p class="text-5xl">Withdraw</p>
+          <p class="text-3xl mt-3">$ <span id="withdraw-display">000</span></p>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-md">
+          <p class="text-5xl">Balance</p>
+          <p class="text-3xl mt-3">$ <span id="balance-field">1000</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-two mt-14">
+      <div class="grid grid-cols-2 w-9/12 mx-auto gap-10 text-white">
+        <div
+          class="bg-slate-800 flex flex-col items-center gap-y-5 py-5 rounded-md"
+        >
+          <p class="text-4xl">Please Deposit</p>
+          <input
+            id="deposit-input"
+            class="block w-8/12 py-1 px-4 rounded-md text-black"
+            type="text"
+            placeholder="$ amount you want to withdraw"
+          />
+          <button
+            id="deposit-btn"
+            class="bg-yellow-500 text-black w-32 font-bold py-1 px-4 rounded-md"
+          >
+            Deposit
+          </button>
+        </div>
+        <div
+          class="bg-cyan-800 flex flex-col items-center gap-y-5 py-5 rounded-md"
+        >
+          <p class="text-4xl">Please Withdraw</p>
+          <input
+            id="withdraw-field"
+            class="block w-8/12 py-1 px-4 rounded-md text-black"
+            type="text"
+            placeholder="$ amount you want to deposit"
+          />
+          <button
+            class="bg-yellow-500 font-bold text-black w-32 py-1 px-4 rounded-md"
+            id="withdraw-btn"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="account.js"></script>
+  </body>
+</html>

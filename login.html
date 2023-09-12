@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      class="nav h-20 flex justify-between items-center bg-slate-700 text-white"
+    >
+      <h1 class="text-2xl ml-10 font-bold">
+        <span class="text-yellow-400">Amar</span> Bank
+      </h1>
+      <ul class="flex items-center gap-x-16">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      .
+    </nav>
+
+    <form
+      class="bg-slate-800 w-1/2 h-72 mx-auto rounded-lg flex justify-center mt-20"
+      action="#"
+    >
+      <div class="mt-6">
+        <h1 class="text-2xl mb-5 text-white">Please login!</h1>
+
+        <label class="mt-4 text-white" for="">Email</label>
+        <input
+          type="email"
+          name=""
+          class="block mt-2 mb-2 border-2 px-2 rounded-sm"
+          id="email"
+          placeholder="Your Email Address"
+        />
+
+        <label class="text-white" for="">Password</label>
+        <input
+          class="block mt-2 mb-4 rounded-sm border-2 px-2"
+          type="password"
+          name=""
+          id="password"
+          placeholder="Your Password"
+        />
+        <button
+          id="submit-btn"
+          onclick="login();"
+          class="bg-amber-400 py-[0.2rem] px-4 rounded-sm hover:bg-green-400"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <script src="login.js"></script>
+  </body>
+</html>
